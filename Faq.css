@@ -1,0 +1,80 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: system-ui;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    position: relative;
+    top: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    text-align: center;
+}
+
+.main .closeQuit {
+    display: flex;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 40vw;
+    justify-content: space-between;
+    padding: 0px 20px;
+    transition: 1s ease;
+    background-color: #222;
+    color: #fff
+}
+
+.main .quit {
+    display: flex;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 40vw;
+    justify-content: space-between;
+    padding: 0px 20px;
+    transition: 1s ease;
+}
+
+.main .quit .closeanswer,
+.main .quit .answer {
+    display: none;
+}
+
+.main .quit .openanswer {
+    display: block;
+}
+
+.main .quit button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+.main .quit button:focus {
+    outline: 0;
+}
+
+@media (max-width:600px) {
+    body {
+        height: 50vh;
+    }
+
+    .main .quit {
+        width: 100%
+    }
+
+}
